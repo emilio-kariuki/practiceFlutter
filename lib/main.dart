@@ -2,37 +2,46 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  // const ({ Key? key }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "Home",
-          style: TextStyle(
-            color: Colors.black,
-            fontFamily: 'IndieFlower',
-            fontSize: 30.0,
-            letterSpacing: 0.9,
-            fontWeight: FontWeight.bold,
+        title: Center(
+          child: Text(
+            "Home",
+            style: TextStyle(
+              fontFamily: "IndieFlower",
+              fontWeight: FontWeight.bold,
+              fontSize: 30.0,
+              color: Colors.black87,
+            ),
           ),
-          ),
+        ),
         backgroundColor: Colors.red[800],
       ),
       body: Center(
-        child: Text(
-          "This the Home page",
-          style: TextStyle(
-            color: Colors.grey[800],
-            fontWeight: FontWeight.bold,
-            fontSize: 30.0,
-            letterSpacing: 1.5,
-            fontFamily: "Island"
+        child: IconButton(
+          onPressed: () {
+            print("you clicked me");
+          },
+          icon: Icon(
+            Icons.add_a_photo,
+            size: 40.0,
+            color: Colors.amber,
           ),
-          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {  },
+        onPressed: () {},
         child: Text("Click"),
-        backgroundColor : Colors.red[800],
+        backgroundColor: Colors.red[800],
       ),
-    ),
-  ));
+    );
+  }
 }
