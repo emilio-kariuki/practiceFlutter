@@ -1,6 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icon.dart';
+import 'package:line_icons/line_icons.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -70,11 +72,8 @@ class home extends StatelessWidget {
               letterSpacing: 0.3,
             ),
           ),
-          icon: Icon(
-            Icons.thumb_up,
-            size: 20.0,
-            color: Colors.amber,
-          ),
+          
+          icon: Icon(LineIcons.car),
           backgroundColor: Colors.red[800],
         ));
   }
