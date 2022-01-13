@@ -23,7 +23,7 @@ class home extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontSize: 30.0,
                 color: Colors.grey,
-                letterSpacing: 0.3,
+                letterSpacing: 0.6,
               ),
             ),
           ),
@@ -72,7 +72,6 @@ class home extends StatelessWidget {
               letterSpacing: 0.3,
             ),
           ),
-          
           icon: Icon(LineIcons.car),
           backgroundColor: Colors.red[800],
         ));
