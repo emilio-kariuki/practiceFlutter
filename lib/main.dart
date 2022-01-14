@@ -29,7 +29,7 @@ class home extends StatelessWidget {
           ),
         ),
         body: Container(
-          child: Column(
+          child: Row(
             children: [
               Text("Hello world"),
               Text("Hell this is Kenya"),
