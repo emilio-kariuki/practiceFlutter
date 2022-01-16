@@ -210,32 +210,105 @@ class Home extends StatelessWidget {
             Column(
               children: [
                 Container(  // color: Colors.amber,
-                        width: 150.0,
-                        child: Text(
-                          "Description",
-                          style: TextStyle(
-                            fontFamily: "Itim",
-                            fontSize: 30.0,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            // fontStyle: FontStyle.normal,
+                  width: 150.0,
+                  child: Text(
+                    "Description",
+                    style: TextStyle(
+                      fontFamily: "Itim",
+                      fontSize: 30.0,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      // fontStyle: FontStyle.normal,
+                    ),
+                    textAlign: TextAlign.start,
+                  ),
+                  ),
+                  SizedBox(height: 20,),
+                  Container(
+                    child: Text(
+                      "The film received positive reviews,\n with praise for the musical score, \ncinematography, and the performances of Jones and especially Redmayne. \nThe film garnered numerous accolades,\n including five Academy Award nominations: \nBest Picture, Best Actress (Jones), Best Adapted .",
+                    style: TextStyle(
+                        fontFamily: "Itim",
+                        fontSize: 20.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                  ),
+                  SizedBox(height: 30,),
+                  Container(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(  // color: Colors.amber,
+                width: 150.0,
+                child: Text(
+                  "Contact me",
+                  style: TextStyle(
+                    fontFamily: "Itim",
+                    fontSize: 30.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    // fontStyle: FontStyle.normal,
+                  ),
+                  textAlign: TextAlign.start,
+                ),
+                ),
+                SizedBox(height: 20,),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                            width: 50.0,
+                            height: 50,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.all(Radius.circular(20)),
+                              image: DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage("assets/google.png"),
+                              ),
+                            ),
+                      ),
+                      SizedBox(width: 10,),
+                      Container(
+                        width: 50.0,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage("assets/twitter.png"),
                           ),
-                          textAlign: TextAlign.start,
                         ),
-                        ),
-                        SizedBox(height: 20,),
-                        Container(
-                          child: Text(
-                            "The film received positive reviews,\n with praise for the musical score, \ncinematography, and the performances of Jones and especially Redmayne. \nThe film garnered numerous accolades,\n including five Academy Award nominations: \nBest Picture, Best Actress (Jones), Best Adapted .",
-                          style: TextStyle(
-                              fontFamily: "Itim",
-                              fontSize: 20.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                          ),
+                      ),
+                      SizedBox(width: 10),
+                      Container(
+                        width: 50.0,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage("assets/instagram.png"),
                           ),
                         ),
-
+                      ),
+                      SizedBox(width: 10),
+                      Container(
+                        width: 50.0,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage("assets/facebook.png"),
+                          ),
+                        ),
+                      ),
+                        ],),
+                      ],
+                    ),
+                  ),
               ],
             ),
           ],
