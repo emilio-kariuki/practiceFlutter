@@ -244,13 +244,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-class Description extends StatelessWidget {
-  const Description({ Key? key }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("hello world"),
-    );
-  }
-}
