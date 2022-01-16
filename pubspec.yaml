@@ -84,5 +84,14 @@ flutter:
     - family: Island
       fonts:
         - asset: fonts/IslandMoments-Regular.ttf
+    - family: mont
+      fonts:
+        - asset: fonts/mont.ttf
+    - family: variable
+      fonts:
+        - asset: fonts/variable.ttf
+    - family: Itim
+      fonts:
+        - asset: fonts/Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
